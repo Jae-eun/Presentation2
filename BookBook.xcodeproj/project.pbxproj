@@ -12,6 +12,15 @@
 		CD820A7820C380B400809A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD820A7620C380B400809A7B /* Main.storyboard */; };
 		CD820A7A20C380B500809A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD820A7920C380B500809A7B /* Assets.xcassets */; };
 		CD820A7D20C380B500809A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD820A7B20C380B500809A7B /* LaunchScreen.storyboard */; };
+		CD820A8720C384ED00809A7B /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD820A8620C384ED00809A7B /* BookTableViewController.swift */; };
+		CD820A8B20C3880900809A7B /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD820A8A20C3880900809A7B /* RecommendViewController.swift */; };
+		CD820A8D20C3889B00809A7B /* AddBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD820A8C20C3889B00809A7B /* AddBookViewController.swift */; };
+		CD820A8F20C3CD2300809A7B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD820A8E20C3CD2300809A7B /* DetailViewController.swift */; };
+		CD820A9120C3CEA000809A7B /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD820A9020C3CEA000809A7B /* CreateViewController.swift */; };
+		CD820A9320C3D5AE00809A7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD820A9220C3D5AE00809A7B /* LoginViewController.swift */; };
+		CD820A9520C3E3CA00809A7B /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = CD820A9420C3E3CA00809A7B /* logout.png */; };
+		CD820A9B20C418B200809A7B /* BookBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD820A9920C418B200809A7B /* BookBook.xcdatamodeld */; };
+		CD820A9D20C41C9200809A7B /* 개인주의자선언.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD820A9C20C41C9200809A7B /* 개인주의자선언.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		CD820A7920C380B500809A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD820A7C20C380B500809A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD820A7E20C380B500809A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD820A8620C384ED00809A7B /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
+		CD820A8A20C3880900809A7B /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		CD820A8C20C3889B00809A7B /* AddBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookViewController.swift; sourceTree = "<group>"; };
+		CD820A8E20C3CD2300809A7B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CD820A9020C3CEA000809A7B /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		CD820A9220C3D5AE00809A7B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CD820A9420C3E3CA00809A7B /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		CD820A9A20C418B200809A7B /* BookBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookBook.xcdatamodel; sourceTree = "<group>"; };
+		CD820A9C20C41C9200809A7B /* 개인주의자선언.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "개인주의자선언.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +72,21 @@
 		CD820A7120C380B400809A7B /* BookBook */ = {
 			isa = PBXGroup;
 			children = (
+				CD820A9C20C41C9200809A7B /* 개인주의자선언.jpg */,
+				CD820A9420C3E3CA00809A7B /* logout.png */,
 				CD820A7220C380B400809A7B /* AppDelegate.swift */,
+				CD820A9220C3D5AE00809A7B /* LoginViewController.swift */,
 				CD820A7420C380B400809A7B /* ViewController.swift */,
+				CD820A8620C384ED00809A7B /* BookTableViewController.swift */,
+				CD820A8C20C3889B00809A7B /* AddBookViewController.swift */,
+				CD820A8E20C3CD2300809A7B /* DetailViewController.swift */,
+				CD820A8A20C3880900809A7B /* RecommendViewController.swift */,
+				CD820A9020C3CEA000809A7B /* CreateViewController.swift */,
 				CD820A7620C380B400809A7B /* Main.storyboard */,
 				CD820A7920C380B500809A7B /* Assets.xcassets */,
 				CD820A7B20C380B500809A7B /* LaunchScreen.storyboard */,
 				CD820A7E20C380B500809A7B /* Info.plist */,
+				CD820A9920C418B200809A7B /* BookBook.xcdatamodeld */,
 			);
 			path = BookBook;
 			sourceTree = "<group>";
@@ -122,9 +149,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD820A9D20C41C9200809A7B /* 개인주의자선언.jpg in Resources */,
 				CD820A7D20C380B500809A7B /* LaunchScreen.storyboard in Resources */,
 				CD820A7A20C380B500809A7B /* Assets.xcassets in Resources */,
 				CD820A7820C380B400809A7B /* Main.storyboard in Resources */,
+				CD820A9520C3E3CA00809A7B /* logout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD820A9120C3CEA000809A7B /* CreateViewController.swift in Sources */,
 				CD820A7520C380B400809A7B /* ViewController.swift in Sources */,
+				CD820A8D20C3889B00809A7B /* AddBookViewController.swift in Sources */,
+				CD820A8720C384ED00809A7B /* BookTableViewController.swift in Sources */,
+				CD820A9B20C418B200809A7B /* BookBook.xcdatamodeld in Sources */,
+				CD820A9320C3D5AE00809A7B /* LoginViewController.swift in Sources */,
 				CD820A7320C380B400809A7B /* AppDelegate.swift in Sources */,
+				CD820A8B20C3880900809A7B /* RecommendViewController.swift in Sources */,
+				CD820A8F20C3CD2300809A7B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +368,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD820A9920C418B200809A7B /* BookBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD820A9A20C418B200809A7B /* BookBook.xcdatamodel */,
+			);
+			currentVersion = CD820A9A20C418B200809A7B /* BookBook.xcdatamodel */;
+			path = BookBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CD820A6720C380B400809A7B /* Project object */;
 }
