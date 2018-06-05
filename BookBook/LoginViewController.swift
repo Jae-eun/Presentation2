@@ -35,7 +35,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if loginPassword.text == "" {
                 labelStatus.text = "비밀번호를 입력하세요"; return;
             }
-            
+           /*
             let urlString: String = "http://condi.swu.ac.kr/student/login/loginUser.php"
             guard let requestURL = URL(string: urlString) else {
                 return
@@ -93,7 +93,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     print("Error: \(error)")
                 }
             }
-            task.resume()
+            task.resume()*/
         }
 
 }

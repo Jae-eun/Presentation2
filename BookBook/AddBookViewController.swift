@@ -31,7 +31,7 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate {
             
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
-            buttonCamera.isEnabled = false
+          //  buttonCamera.isEnabled = false
         }
     }
     
