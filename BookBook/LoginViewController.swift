@@ -17,6 +17,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
+            labelStatus.text = " "
         }
         
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
@@ -30,24 +31,28 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         @IBAction func loginPressed() {
             if loginUserid.text == "" {
-                labelStatus.text = "ID를 입력하세요"; return;
+                labelStatus.text = "아이디를 입력하세요"; return;
             }
             if loginPassword.text == "" {
                 labelStatus.text = "비밀번호를 입력하세요"; return;
             }
-           /*
-            let urlString: String = "http://condi.swu.ac.kr/student/login/loginUser.php"
+           
+            let urlString: String = "http://condi.swu.ac.kr/student/T10iphone/loginUser.php"
             guard let requestURL = URL(string: urlString) else {
                 return
             }
             self.labelStatus.text = " "
             
             var request = URLRequest(url: requestURL)
+            
             request.httpMethod = "POST"
-            let restString: String = "id=" + loginUserid.text! + "&password=" + loginPassword.text!
+            
+            let restString: String = "id=" + loginUserid.text! + "&passwd=" + loginPassword.text!
             
             request.httpBody = restString.data(using: .utf8)
+            
             let session = URLSession.shared
+            
             let task = session.dataTask(with: request) { (responseData, response, responseError) in
                 guard responseError == nil else {
                     print("Error: calling POST")
@@ -68,14 +73,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                         print("JSON Serialization Error!")
                         return
                     }
-                    guard let success = jsonData["success"] as! String! else {
+                    guard let success = jsonData["success"] as! String? else {
                         print("Error: PHP failure(success)")
                         return
                     }
                     if success == "YES" {
-                        if let name = jsonData["name"] as! String! {
+                        if let name = jsonData["name"] as! String? {
                             DispatchQueue.main.async {
-                                self.labelStatus.text = name + "님 안녕하세요?"
+                                //self.labelStatus.text = name + "님 안녕하세요?"
                                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
                                 appDelegate.ID = self.loginUserid.text
                                 appDelegate.userName = name
@@ -83,7 +88,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                             }
                         }
                     } else {
-                        if let errMessage = jsonData["error"] as! String! {
+                        if let errMessage = jsonData["error"] as! String? {
                             DispatchQueue.main.async {
                                 self.labelStatus.text = errMessage
                             }
@@ -93,7 +98,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     print("Error: \(error)")
                 }
             }
-            task.resume()*/
+            task.resume()
         }
 
 }

@@ -10,16 +10,36 @@ import UIKit
 
 class RecommendViewController: UIViewController {
 
+  //  @IBOutlet var bookImage: UIImageView!
+  //  @IBOutlet var bookName: UILabel!
+
+  
+  //  var selectedData: BookData?
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
+    /*    guard let bookData = selectedData else { return }
+        bookName.text = bookData.name
 
+        
+        var imageName = bookData.image
+        if (imageName != "") {
+            let urlString = "http://condi.swu.ac.kr/student/T10iphone/booklist"
+            imageName = urlString + imageName
+            let url = URL(string: imageName)!
+            if let imageData = try? Data(contentsOf: url) {
+                bookImage.image = UIImage(data:imageData)
+            }
+        }
+         */
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

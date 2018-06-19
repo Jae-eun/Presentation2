@@ -21,6 +21,10 @@
 		CD820A9520C3E3CA00809A7B /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = CD820A9420C3E3CA00809A7B /* logout.png */; };
 		CD820A9B20C418B200809A7B /* BookBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD820A9920C418B200809A7B /* BookBook.xcdatamodeld */; };
 		CD820A9D20C41C9200809A7B /* 개인주의자선언.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD820A9C20C41C9200809A7B /* 개인주의자선언.jpg */; };
+		CDC9B4D020D80B8000906A33 /* NanumSquareRoundB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDC9B4CE20D80B7A00906A33 /* NanumSquareRoundB.ttf */; };
+		CDC9B4D120D80B8000906A33 /* NanumSquareRoundEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDC9B4CF20D80B7C00906A33 /* NanumSquareRoundEB.ttf */; };
+		CDC9B4D520D8288500906A33 /* open-book-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC9B4D420D8288400906A33 /* open-book-2.png */; };
+		CDF363AC20D3D7B80064CE94 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF363AB20D3D7B80064CE94 /* BookData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		CD820A9420C3E3CA00809A7B /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
 		CD820A9A20C418B200809A7B /* BookBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookBook.xcdatamodel; sourceTree = "<group>"; };
 		CD820A9C20C41C9200809A7B /* 개인주의자선언.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "개인주의자선언.jpg"; sourceTree = "<group>"; };
+		CDC9B4CE20D80B7A00906A33 /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundB.ttf; sourceTree = "<group>"; };
+		CDC9B4CF20D80B7C00906A33 /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundEB.ttf; sourceTree = "<group>"; };
+		CDC9B4D420D8288400906A33 /* open-book-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open-book-2.png"; sourceTree = "<group>"; };
+		CDF363AB20D3D7B80064CE94 /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,9 @@
 		CD820A7120C380B400809A7B /* BookBook */ = {
 			isa = PBXGroup;
 			children = (
+				CDC9B4D420D8288400906A33 /* open-book-2.png */,
+				CDC9B4CE20D80B7A00906A33 /* NanumSquareRoundB.ttf */,
+				CDC9B4CF20D80B7C00906A33 /* NanumSquareRoundEB.ttf */,
 				CD820A9C20C41C9200809A7B /* 개인주의자선언.jpg */,
 				CD820A9420C3E3CA00809A7B /* logout.png */,
 				CD820A7220C380B400809A7B /* AppDelegate.swift */,
@@ -82,6 +93,7 @@
 				CD820A8E20C3CD2300809A7B /* DetailViewController.swift */,
 				CD820A8A20C3880900809A7B /* RecommendViewController.swift */,
 				CD820A9020C3CEA000809A7B /* CreateViewController.swift */,
+				CDF363AB20D3D7B80064CE94 /* BookData.swift */,
 				CD820A7620C380B400809A7B /* Main.storyboard */,
 				CD820A7920C380B500809A7B /* Assets.xcassets */,
 				CD820A7B20C380B500809A7B /* LaunchScreen.storyboard */,
@@ -149,11 +161,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC9B4D520D8288500906A33 /* open-book-2.png in Resources */,
 				CD820A9D20C41C9200809A7B /* 개인주의자선언.jpg in Resources */,
+				CDC9B4D120D80B8000906A33 /* NanumSquareRoundEB.ttf in Resources */,
 				CD820A7D20C380B500809A7B /* LaunchScreen.storyboard in Resources */,
 				CD820A7A20C380B500809A7B /* Assets.xcassets in Resources */,
 				CD820A7820C380B400809A7B /* Main.storyboard in Resources */,
 				CD820A9520C3E3CA00809A7B /* logout.png in Resources */,
+				CDC9B4D020D80B8000906A33 /* NanumSquareRoundB.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF363AC20D3D7B80064CE94 /* BookData.swift in Sources */,
 				CD820A9120C3CEA000809A7B /* CreateViewController.swift in Sources */,
 				CD820A7520C380B400809A7B /* ViewController.swift in Sources */,
 				CD820A8D20C3889B00809A7B /* AddBookViewController.swift in Sources */,
@@ -317,7 +333,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R78643UTJ5;
 				INFOPLIST_FILE = BookBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +352,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R78643UTJ5;
 				INFOPLIST_FILE = BookBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

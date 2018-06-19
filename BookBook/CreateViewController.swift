@@ -13,17 +13,23 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
         
         @IBOutlet var textID: UITextField!
         @IBOutlet var textPassword: UITextField!
+        @IBOutlet var rePassword: UITextField!
         @IBOutlet var textName: UITextField!
         @IBOutlet var labelStatus: UILabel!
         
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
-            if textField == self.textID {
+            
+            if textField == self.textName {
+                textField.resignFirstResponder()
+                self.textID.becomeFirstResponder()
+            }
+            else if textField == self.textID {
                 textField.resignFirstResponder()
                 self.textPassword.becomeFirstResponder()
             }
             else if textField == self.textPassword {
                 textField.resignFirstResponder()
-                self.textName.becomeFirstResponder()
+                self.rePassword.becomeFirstResponder()
             }
             textField.resignFirstResponder()
             return true
@@ -32,6 +38,7 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
         override func viewDidLoad() {
             super.viewDidLoad()
             
+           labelStatus.text = ""
             // Do any additional setup after loading the view.
         }
         
@@ -58,22 +65,31 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
         
         @IBAction func buttonSave() {
             if textID.text == "" {
-                labelStatus.text = "ID를 입력하세요"; return;
+                labelStatus.text = "아이디를 입력하세요"; return;
             }
             if textPassword.text == "" {
-                labelStatus.text = "Password를 입력하세요"; return;
+                labelStatus.text = "패스워드를 입력하세요"; return;
+            }
+            if textPassword.text != rePassword.text {
+                labelStatus.text = "비밀번호가 일치하지 않습니다"; return;
             }
             if textName.text == "" {
-                labelStatus.text = "사용자 이름을 입력하세요"; return;
+                labelStatus.text = "이름을 입력하세요"; return;
             }
-            let urlString: String = "http://condi.swu.ac.kr/student/login/insertUser.php"
+            let urlString: String = "http://condi.swu.ac.kr/student/T10iphone/insertUser.php"
+            
             guard let requestURL = URL(string: urlString) else {
                 return
             }
+            
             var request = URLRequest(url: requestURL)
+            
             request.httpMethod = "POST"
-            let restString: String = "id=" + textID.text! + "&password=" + textPassword.text! + "&name=" + textName.text!
+            
+            let restString: String = "id=" + textID.text! + "&passwd=" + textPassword.text! + "&name=" + textName.text!
+            
             request.httpBody = restString.data(using: .utf8)
+            
             self.executeRequest(request: request)
         }
         
